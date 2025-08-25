@@ -101,7 +101,7 @@ const LocationSlider = () => {
                       {/* Image Container */}
                       <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
                         <div className="aspect-[4/3] overflow-hidden">
-                          <img 
+                          <img loading="lazy"
                             src={location.image}
                             alt={location.name}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

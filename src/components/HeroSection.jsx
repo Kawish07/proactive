@@ -91,7 +91,7 @@ const HeroSection = ({
               </div>
               <div className="text-white">
                 <Link to="/">
-                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" loading="lazy" />
                 </Link>
               </div>
             </div>

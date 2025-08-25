@@ -53,7 +53,7 @@ const BlogSection = () => {
                 <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                   {/* Image Container with Gradient Overlay */}
                   <div className="relative h-64 overflow-hidden">
-                    <img 
+                    <img loading="lazy" 
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"

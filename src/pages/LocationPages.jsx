@@ -297,7 +297,7 @@ const LocationPage = () => {
                                 </div>
                                 <div className="text-white">
                                    <Link to="/">
-                                       <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                                       <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" loading="lazy" />
                                    </Link>
                                 </div>
                             </div>
@@ -359,7 +359,7 @@ const LocationPage = () => {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Commercial Cleaning" className="rounded-2xl w-full max-w-md object-cover" />
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Commercial Cleaning" className="rounded-2xl w-full max-w-md object-cover" loading="lazy" />
                     </div>
                 </div>
 
@@ -375,7 +375,7 @@ const LocationPage = () => {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Property Cleaning" className="rounded-2xl w-full max-w-md object-cover" />
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Property Cleaning" className="rounded-2xl w-full max-w-md object-cover" loading="lazy" />
                     </div>
                 </div>
 
@@ -391,7 +391,7 @@ const LocationPage = () => {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1588776814546-ec7e4b2b1d8e?auto=format&fit=crop&w=800&q=80" alt="Disinfection Cleaning" className="rounded-2xl w-full max-w-md object-cover" />
+                        <img src="https://images.unsplash.com/photo-1588776814546-ec7e4b2b1d8e?auto=format&fit=crop&w=800&q=80" alt="Disinfection Cleaning" className="rounded-2xl w-full max-w-md object-cover" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -455,7 +455,7 @@ const LocationPage = () => {
                 {/* Right Side - Interactive SVG Map */}
                 <div className="flex-1 flex justify-center">
                     
-                    <img src="/map.png" alt="" />
+                    <img src="/map.png" alt="" loading="lazy" />
                 </div>
             </div>
             <LocationSlider />

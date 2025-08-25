@@ -39,7 +39,7 @@ const ServicePage = () => {
                 </div>
                 <div className="text-white">
                   <Link to="/">
-                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" loading="lazy" />
                 </Link>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <img src={service.heroImage} alt={service.title} className="rounded-2xl w-full max-w-xs object-cover" />
+            <img src={service.heroImage} alt={service.title} className="rounded-2xl w-full max-w-xs object-cover" loading="lazy" />
           </div>
         </div>
       </section>

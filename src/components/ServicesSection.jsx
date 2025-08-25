@@ -478,7 +478,7 @@ const ServicePage = ({ serviceKey, onBack }) => {
                 </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <img src={service.heroImage} alt={service.title} className="rounded-2xl w-full max-w-xs object-cover" />
+                <img src={service.heroImage} alt={service.title} className="rounded-2xl w-full max-w-xs object-cover" loading="lazy" />
               </div>
             </div>
           </div>

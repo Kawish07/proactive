@@ -81,7 +81,7 @@ const LocationSection = () => {
           <div className="flex justify-center items-center">
             <div className="relative w-full max-w-md">
               {/* Map Image - Clean and flat */}
-              <img 
+              <img loading="lazy" 
                 src="/map.png" 
                 alt="UK Map showing service locations" 
                 className="w-full h-auto"

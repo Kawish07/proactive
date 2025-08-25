@@ -11,7 +11,7 @@ const Footer = () => (
           <div className="flex items-center mb-4">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-green-500 rounded mr-3"></div>
             <div>
-              <img src="/footerlogo.png" alt="Proactive Cleaners Logo" />
+              <img src="/footerlogo.png" alt="Proactive Cleaners Logo" loading="lazy" />
             </div>
           </div>
           <p className="text-gray-600 mb-6 text-sm leading-relaxed">
@@ -86,7 +86,7 @@ const Footer = () => (
           
           {/* UK Map */}
           <div className="relative">
-            <img src="/map.png" alt="Map of UK" />
+            <img src="/map.png" alt="Map of UK" loading="lazy" />
           </div>
         </div>
       </div>
