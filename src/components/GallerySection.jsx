@@ -4,46 +4,19 @@ import { useEffect, useState } from 'react';
 const GallerySection = () => {
   // Gallery images data
   const galleryImages = [
-    {
-      id: 1,
-      url: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Professional carpet cleaning'
-    },
-    {
-      id: 2,
-      url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Modern office cleaning'
-    },
-    {
-      id: 3,
-      url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Residential cleaning service'
-    },
-    {
-      id: 4,
-      url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Construction site cleanup'
-    },
-    {
-      id: 5,
-      url: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Disinfection cleaning'
-    },
-    {
-      id: 6,
-      url: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Specialist cleaning equipment'
-    },
-    {
-      id: 7,
-      url: 'https://images.unsplash.com/photo-1603988492906-4fb0fb251cf8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Professional cleaning team'
-    },
-    {
-      id: 8,
-      url: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Cleaning supplies and tools'
-    }
+    { id: 1, url: '/1.webp', alt: 'Gallery image 1' },
+    { id: 2, url: '/2.jpg', alt: 'Gallery image 2' },
+    { id: 3, url: '/3.webp', alt: 'Gallery image 3' },
+    { id: 4, url: '/4.jpg', alt: 'Gallery image 4' },
+    { id: 5, url: '/5.jpg', alt: 'Gallery image 5' },
+    { id: 6, url: '/6.webp', alt: 'Gallery image 6' },
+    { id: 7, url: '/7.jpg', alt: 'Gallery image 7' },
+    { id: 8, url: '/8.jpg', alt: 'Gallery image 8' },
+    { id: 9, url: '/9.jpg', alt: 'Gallery image 9' },
+    { id: 10, url: '/10.jpg', alt: 'Gallery image 10' },
+    { id: 11, url: '/11.webp', alt: 'Gallery image 11' },
+    { id: 12, url: '/12.webp', alt: 'Gallery image 12' },
+    { id: 13, url: '/13.jpg', alt: 'Gallery image 13' }
   ];
 
   // Duplicate images for seamless animation
@@ -123,11 +96,11 @@ const GallerySection = () => {
         }
 
         .animate-slide-left-to-right {
-          animation: slide-left-to-right 30s linear infinite;
+          animation: slide-left-to-right 18s linear infinite;
         }
 
         .animate-slide-right-to-left {
-          animation: slide-right-to-left 30s linear infinite;
+          animation: slide-right-to-left 18s linear infinite;
         }
       `}</style>
     </section>

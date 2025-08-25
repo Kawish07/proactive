@@ -86,7 +86,22 @@ const TestimonialsSection = () => {
   ];
 
   const [current, setCurrent] = React.useState(0);
-  const visibleCount = 3;
+  // Responsive visible count
+  const [visibleCount, setVisibleCount] = React.useState(3);
+  React.useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 640) {
+        setVisibleCount(1);
+      } else if (window.innerWidth < 1024) {
+        setVisibleCount(2);
+      } else {
+        setVisibleCount(3);
+      }
+    };
+    updateVisibleCount();
+    window.addEventListener('resize', updateVisibleCount);
+    return () => window.removeEventListener('resize', updateVisibleCount);
+  }, []);
   const maxIndex = testimonials.length - visibleCount;
 
   const handlePrev = () => {
@@ -118,7 +133,7 @@ const TestimonialsSection = () => {
         {/* Professional Slider Carousel */}
         <div className="relative max-w-7xl mx-auto mb-12 overflow-hidden">
           <div
-            className="flex gap-6"   // ✅ gap between cards
+            className="flex gap-6 sm:gap-4 md:gap-6 lg:gap-8"
             style={{
               width: `${(testimonials.length / visibleCount) * 100}%`,
               transform: `translateX(-${current * (100 / testimonials.length)}%)`,
@@ -128,8 +143,8 @@ const TestimonialsSection = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl"
-                style={{ width: `${100 / testimonials.length}%` }}
+                className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-xl flex flex-col justify-between w-full"
+                style={{ width: `${100 / testimonials.length}%`, minWidth: 0 }}
               >
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-4">
@@ -225,7 +240,7 @@ const TestimonialsSection = () => {
         {/* Bottom Controls */}
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Google Review Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path
@@ -262,14 +277,14 @@ const TestimonialsSection = () => {
           {/* Navigation Arrows */}
           <div className="flex items-center gap-2">
             <button
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-3 rounded-full transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-colors"
               onClick={handlePrev}
               disabled={current === 0}
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
-              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-3 rounded-full transition-colors"
+              className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-colors"
               onClick={handleNext}
               disabled={current === maxIndex}
             >
