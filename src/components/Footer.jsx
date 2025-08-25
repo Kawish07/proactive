@@ -11,8 +11,7 @@ const Footer = () => (
           <div className="flex items-center mb-4">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-green-500 rounded mr-3"></div>
             <div>
-              <h3 className="text-xl font-bold text-gray-800">PROACTIVE</h3>
-              <h3 className="text-xl font-bold text-gray-800 -mt-1">CLEANERS.</h3>
+              <img src="/footerlogo.png" alt="Proactive Cleaners Logo" />
             </div>
           </div>
           <p className="text-gray-600 mb-6 text-sm leading-relaxed">
@@ -31,21 +30,6 @@ const Footer = () => (
               <p>sales@proactivecleaners.co.uk</p>
               <p>Futureworks, 2 Brunel Way., Slough</p>
               <p>SL1 1XL, United Kingdom</p>
-            </div>
-          </div>
-          
-          <div>
-            <h4 className="font-bold text-gray-800 mb-3">Follow Us</h4>
-            <div className="flex space-x-3">
-              <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center">
-                <span className="text-white text-sm">f</span>
-              </div>
-              <div className="w-8 h-8 bg-pink-500 rounded flex items-center justify-center">
-                <span className="text-white text-sm">@</span>
-              </div>
-              <div className="w-8 h-8 bg-black rounded flex items-center justify-center">
-                <span className="text-white text-sm">♪</span>
-              </div>
             </div>
           </div>
         </div>
@@ -102,42 +86,7 @@ const Footer = () => (
           
           {/* UK Map */}
           <div className="relative">
-            <svg viewBox="0 0 200 240" className="w-48 h-60">
-              {/* UK Outline */}
-              <path
-                d="M50 40 L60 20 L80 15 L100 20 L120 25 L140 30 L150 40 L160 60 L155 80 L150 100 L145 120 L140 140 L135 160 L130 180 L120 200 L100 210 L80 205 L60 195 L45 180 L40 160 L35 140 L30 120 L25 100 L20 80 L25 60 L35 45 Z"
-                fill="#3B82F6"
-                className="opacity-80"
-              />
-              
-              {/* Location Markers */}
-              <circle cx="70" cy="80" r="3" fill="#1F2937" />
-              <circle cx="90" cy="75" r="3" fill="#1F2937" />
-              <circle cx="85" cy="95" r="3" fill="#1F2937" />
-              <circle cx="110" cy="85" r="3" fill="#1F2937" />
-              <circle cx="120" cy="100" r="3" fill="#1F2937" />
-              <circle cx="95" cy="110" r="3" fill="#1F2937" />
-              <circle cx="75" cy="120" r="3" fill="#1F2937" />
-              <circle cx="105" cy="125" r="3" fill="#1F2937" />
-              <circle cx="115" cy="140" r="3" fill="#1F2937" />
-              <circle cx="85" cy="135" r="3" fill="#1F2937" />
-              
-              {/* Scotland */}
-              <path
-                d="M80 15 L85 10 L95 8 L105 12 L115 18 L120 25 L125 35 L130 45 L125 55 L120 50 L115 45 L110 40 L105 35 L100 30 L95 25 L90 22 L85 20 Z"
-                fill="#3B82F6"
-                className="opacity-80"
-              />
-              <circle cx="100" cy="30" r="3" fill="#1F2937" />
-              
-              {/* Northern Ireland */}
-              <path
-                d="M35 70 L40 65 L48 68 L52 75 L48 82 L42 85 L36 82 L32 78 Z"
-                fill="#3B82F6"
-                className="opacity-80"
-              />
-              <circle cx="42" cy="75" r="3" fill="#1F2937" />
-            </svg>
+            <img src="/map.png" alt="Map of UK" />
           </div>
         </div>
       </div>

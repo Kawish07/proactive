@@ -8,27 +8,27 @@ const FAQSection = () => {
     {
       id: 0,
       question: "Why should I use Proactive Cleaners?",
-      answer: "With over 15 years of experience in the commercial and construction sectors, we have extensive knowledge and expertise, which means we can deliver above and beyond our client's expectations. We form long-lasting relationships with our clients. Many customers continue to work with us because of the quality that we provide.\n\nWhat makes us different is the true personalisation that you'll receive as well as our commitment to quality and safety through our many accreditations. Experience our superior levels of service today by getting in touch to receive your bespoke quote."
+      answer: "We bring deep expertise in commercial and construction cleaning, with a strong focus on delivering reliable and consistent results. Our approach is centered on understanding the unique needs of each client and tailoring our services accordingly.\n\nWhat makes us different is the personal touch you receive — a commitment to quality, attention to detail, and complete professionalism from start to finish. Working with us means peace of mind that your environment will always be maintained to the highest standards."
     },
     {
       id: 1,
       question: "Do you have a price list?",
-      answer: "We provide customized quotes based on your specific cleaning requirements. Each property and cleaning need is unique, so we assess factors like size, frequency, type of cleaning required, and any special requirements to provide you with the most accurate pricing."
+      answer: "We don’t use a fixed price list because every cleaning requirement is different. Our team takes into account your space, the type of cleaning you need, and any specific requests to create a personalized quote that suits you best."
     },
     {
       id: 2,
       question: "How do I book a cleaning service?",
-      answer: "Booking a cleaning service is simple! You can contact us through our website contact form, call us directly at 01753 428100, or email us at sales@proactivecleaners.co.uk. We'll discuss your requirements and arrange a convenient time for service."
+      answer: "Booking a service with us is straightforward and hassle-free. Simply reach out to our team, share your requirements, and we’ll guide you through the process while arranging a time that works best for you."
     },
     {
       id: 3,
       question: "How can I trust your cleaners?",
-      answer: "All our cleaning staff are fully vetted, insured, and trained to the highest standards. We conduct thorough background checks and provide comprehensive training. Our team is bonded and insured, giving you complete peace of mind when we're working in your property."
+      answer: "Trust is at the core of our service. Every member of our cleaning team is carefully selected, thoroughly trained, and equipped to maintain the highest professional standards. We ensure that our staff are reliable, respectful, and committed to delivering excellent results."
     },
     {
       id: 4,
       question: "Are you accredited?",
-      answer: "Yes, we hold multiple industry accreditations and certifications. We are committed to maintaining the highest standards of service and safety, which is reflected in our various professional accreditations and ongoing training programs."
+      answer: "Yes, we follow strict industry standards and maintain professional accreditations that reflect our dedication to quality and safety. We continuously invest in training and improvements so that our services always meet the highest expectations."
     }
   ];
 
@@ -43,7 +43,7 @@ const FAQSection = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             
             {/* Left Side - FAQ List */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
               {faqs.map((faq) => (
                 <div key={faq.id} className="bg-white rounded-2xl overflow-hidden shadow-sm">
                   {/* FAQ Header */}
@@ -116,7 +116,7 @@ const FAQSection = () => {
                       
                       {/* Stats Text */}
                       <div>
-                        <div className="text-green-400 text-3xl font-bold">800+</div>
+                        <div className="text-green-400 text-3xl font-bold">100+</div>
                         <div className="text-white font-medium">We Solved The Problems</div>
                       </div>
                     </div>

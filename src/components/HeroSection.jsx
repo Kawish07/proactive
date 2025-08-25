@@ -90,12 +90,9 @@ const HeroSection = ({
                 </div>
               </div>
               <div className="text-white">
-                <div className="font-bold text-lg sm:text-xl">
-                  <span className="text-green-400">PROACTIVE</span>
-                </div>
-                <div className="font-bold text-lg sm:text-xl -mt-1">
-                  <span className="text-white">CLEANERS</span>
-                </div>
+                <Link to="/">
+                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                </Link>
               </div>
             </div>
           </div>
@@ -128,7 +125,7 @@ const HeroSection = ({
               </Link>
 
               {/* Desktop Services Dropdown Menu */}
-              <div className="absolute top-full right-0 mt-2 w-[800px] bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[800px] bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                 <div className="flex min-h-[400px]">
                   {/* Left Side - Service Categories */}
                   <div className="w-1/3 bg-gray-50 p-8 rounded-l-2xl">
@@ -228,7 +225,7 @@ const HeroSection = ({
               </Link>
 
               {/* Desktop Locations Dropdown Menu */}
-              <div className="absolute top-full right-0 mt-2 w-[1000px] bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[1000px] bg-white rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
                 <div className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-3xl font-bold text-gray-800 mb-2">Areas We Cover</h3>
@@ -318,6 +315,8 @@ const HeroSection = ({
             >
               Contact
             </Link>
+          </div>
+          <div>
             <Link
               to="/quote"
               className="ml-6 bg-green-400 hover:bg-green-500 text-[#02294D] font-bold py-2 px-6 rounded-full shadow transition flex items-center gap-2"
@@ -327,15 +326,15 @@ const HeroSection = ({
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="lg:hidden text-white z-50 relative"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
-            <svg 
-              className={`w-6 h-6 transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-90' : ''}`} 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className={`w-6 h-6 transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-90' : ''}`}
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
               {isMobileMenuOpen ? (
@@ -349,16 +348,15 @@ const HeroSection = ({
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div 
+          <div
             className="lg:hidden fixed inset-0 bg-black/50 z-40"
             onClick={closeMobileMenu}
           />
         )}
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-[#02294D] z-50 transform transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}>
+        <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-[#02294D] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}>
           <div className="flex flex-col h-full">
             {/* Mobile Menu Header */}
             <div className="flex items-center justify-between p-4 border-b border-blue-700/30">
@@ -377,7 +375,7 @@ const HeroSection = ({
                   </div>
                 </div>
               </div>
-              <button 
+              <button
                 onClick={closeMobileMenu}
                 className="text-white p-2"
                 aria-label="Close mobile menu"
@@ -398,7 +396,7 @@ const HeroSection = ({
                 >
                   Home
                 </Link>
-                
+
                 <Link
                   to="/about"
                   className="block text-white hover:text-green-300 transition-colors font-medium text-lg"
@@ -418,7 +416,7 @@ const HeroSection = ({
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  
+
                   {isServicesOpen && (
                     <div className="mt-4 pl-4 space-y-3 border-l border-blue-700/30">
                       {Object.keys(serviceDetails).map((key) => (
@@ -446,7 +444,7 @@ const HeroSection = ({
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  
+
                   {isLocationsOpen && (
                     <div className="mt-4 pl-4 space-y-3 border-l border-blue-700/30 max-h-40 overflow-y-auto">
                       {locationAreas.map((location, index) => (
@@ -462,7 +460,7 @@ const HeroSection = ({
                     </div>
                   )}
                 </div>
-                
+
                 <Link
                   to="/sector"
                   className="block text-white hover:text-green-300 transition-colors font-medium text-lg"
@@ -470,7 +468,7 @@ const HeroSection = ({
                 >
                   Sectors
                 </Link>
-                
+
                 <Link
                   to="/contact"
                   className="block text-white hover:text-green-300 transition-colors font-medium text-lg"

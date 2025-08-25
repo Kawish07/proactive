@@ -106,48 +106,6 @@ const Home = () => {
             <HeroSection />
             <AboutSection />
 
-            {/* Trusted Brands Section */}
-            {/* Trusted Brands Section */}
-            <section className="py-16 bg-white">
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="text-center mb-12">
-                        <p className="text-gray-500 uppercase tracking-wider text-sm font-medium">
-                            Recognised as a Leading Cleaning Company
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                        {[
-                            { name: 'PARADHNS', color: 'text-blue-800' },
-                            { name: 'NHS', color: 'text-blue-600' },
-                            { name: 'HAVAS', color: 'text-red-600' },
-                            { name: 'MORGAN', color: 'text-gray-800' },
-                            { name: 'SINDAIL', color: 'text-indigo-800' },
-                            { name: 'GROUP', color: 'text-gray-700' },
-                            { name: 'Aktronique', color: 'text-purple-600' },
-                            { name: 'CSEORNE', color: 'text-green-700' },
-                            { name: 'KIER', color: 'text-orange-600' },
-                            { name: 'savills', color: 'text-red-700' },
-                            { name: 'METROPOLITAN', color: 'text-blue-900' },
-                            { name: 'POLICE', color: 'text-blue-800' },
-                            { name: 'UNIVERSITY OF', color: 'text-gray-800' },
-                            { name: 'OXFORD', color: 'text-blue-900' },
-                            { name: 'eCourse.CO.UK', color: 'text-green-600' },
-                            { name: 'LADUREE', color: 'text-pink-600' },
-                        ].map((brand, index) => (
-                            <div
-                                key={index}
-                                className="bg-gray-50 rounded-lg p-6 flex items-center justify-center hover:bg-gray-100 transition-colors duration-300"
-                            >
-                                <span className={`${brand.color} font-bold text-lg md:text-xl`}>
-                                    {brand.name}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Services Section */}
             <ServicesSection />
 
@@ -186,20 +144,9 @@ const Home = () => {
                         </div>
 
                         <div className="relative">
-                            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 text-white text-center shadow-2xl">
+                            <div className="bg-transparent rounded-3xl p-8 text-white text-center">
                                 <div className="grid grid-cols-3 gap-6">
-                                    <div>
-                                        <div className="text-3xl font-bold text-green-300 mb-1">85+</div>
-                                        <div className="text-sm text-blue-100">Estate Agents Worked With</div>
-                                    </div>
-                                    <div>
-                                        <div className="text-3xl font-bold text-green-300 mb-1">1,500+</div>
-                                        <div className="text-sm text-blue-100">Projects Completed</div>
-                                    </div>
-                                    <div>
-                                        <div className="text-3xl font-bold text-green-300 mb-1">80%</div>
-                                        <div className="text-sm text-blue-100">Clients Delivered from Referrals</div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -353,7 +300,6 @@ const Home = () => {
             <TestimonialsSection />
             <ContactSection />
             <FAQSection />
-            <BlogSection />
             {/* Quote Modal */}
             <QuoteModal open={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
         </div>

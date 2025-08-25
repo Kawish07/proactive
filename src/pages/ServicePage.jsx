@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate,Link } from 'react-router-dom';
 import { serviceData } from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
 import GetQuoteForm from '../components/GetQuoteForm';
@@ -28,34 +28,38 @@ const ServicePage = () => {
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col">
           {/* Navigation Bar (same as home) */}
-          <nav className="px-8 py-8 flex items-center justify-between  backdrop-blur-sm rounded-t-3xl" style={{background: 'linear-gradient(90deg, #02294D 0%, #02294D 100%)'}}>
+          <nav className="px-4 sm:px-8 py-4 sm:py-8 flex items-center justify-between" style={{ backgroundColor: '#02294D' }}>
+            {/* Logo - Left Side */}
             <div className="flex items-center">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <div className="w-5 h-5 bg-blue-600 rounded-full relative">
-                      <div className="absolute top-1 left-1 w-2 h-2 bg-green-400 rounded-full"></div>
-                    </div>
-                  </div>
-                  <div className="text-white">
-                    <div className="font-bold text-xl">
-                      <span className="text-green-400">PROACTIVE</span>
-                    </div>
-                    <div className="font-bold text-xl -mt-1">
-                      <span className="text-white">CLEANERS</span>
-                    </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-blue-600 rounded-full relative">
+                    <div className="absolute top-1 left-1 w-2 h-2 bg-green-400 rounded-full"></div>
                   </div>
                 </div>
+                <div className="text-white">
+                  <Link to="/">
+                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                </Link>
+                </div>
               </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="/" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer text-green-400">Home</a>
+            </div>
+
+            {/* Center Navigation Links */}
+            <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+              <a href="/" className="text-green-400 hover:text-green-300 transition-colors font-medium cursor-pointer">Home</a>
               <a href="/about" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">About Us</a>
               <a href="/services" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Services</a>
               <a href="/location" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Locations</a>
               <a href="/sector" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Sectors</a>
               <a href="/contact" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Contact</a>
-              <a href="/contact" className="bg-green-400 hover:bg-green-500 text-blue-900 font-bold py-2 px-6 rounded-full shadow transition flex items-center gap-2">Get a Quote <span aria-hidden="true">↗</span></a>
             </div>
-            <button className="md:hidden text-white">
+
+            {/* Get Quote Button - Right Side */}
+            <a href="/quote" className="hidden lg:flex bg-green-400 hover:bg-green-500 text-[#02294D] font-bold py-2 px-6 rounded-full shadow transition items-center gap-2">Get a Quote <span aria-hidden="true">↗</span></a>
+
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden text-white z-50 relative" aria-label="Toggle mobile menu">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>

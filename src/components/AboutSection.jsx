@@ -57,34 +57,14 @@ const ProactiveCleanersAbout = () => {
             </div>
           </div>
 
-          {/* Right Images */}
-          <div className="space-y-4">
-            {/* Top Image - Workers on lift */}
-            <div className="relative rounded-lg overflow-hidden">
+          {/* Right Image */}
+          <div className="flex justify-center">
+            <div className="relative rounded-lg overflow-hidden max-w-md w-full">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Construction workers on elevated platform"
-                className="w-full h-64 object-cover"
+                src="/about1.png"
+                alt="About Proactive Cleaners"
+                className="w-full h-auto object-cover"
               />
-            </div>
-
-            {/* Bottom Row - Two smaller images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                  alt="Professional cleaner working on glass doors"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
-
-              <div className="relative rounded-lg overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                  alt="Window cleaning professional at work"
-                  className="w-full h-48 object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>

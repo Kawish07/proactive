@@ -7,7 +7,7 @@ export const serviceData = {
   'commercial-cleaning': {
     title: 'The Best Commercial Cleaning Solutions',
     subtitle: 'Professional Office & Business Cleaning Services',
-    heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/commercialcleaning.png',
     description: 'We provide comprehensive commercial cleaning services that keep your workplace spotless and productive with our experienced team covering offices, retail spaces, and business facilities.',
     features: [
       'Daily office cleaning and maintenance',
@@ -44,7 +44,7 @@ export const serviceData = {
   'specialist-cleaning': {
     title: 'Expert Specialist Cleaning Solutions',
     subtitle: 'Specialized Services for Unique Cleaning Challenges',
-    heroImage: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/specialistcleaning.png',
     description: 'We provide specialized cleaning services for delicate and complex requirements with precision and care using advanced equipment and certified techniques.',
     features: [
       'High-level cleaning and access',
@@ -75,7 +75,7 @@ export const serviceData = {
   'property-cleaning': {
     title: 'Complete Property Management Solutions',
     subtitle: 'Comprehensive Property Maintenance & Cleaning Services',
-    heroImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/Propertycleaning.png',
     description: 'We provide comprehensive cleaning services to maintain your properties in pristine condition covering residential, commercial and mixed-use developments.',
     features: [
       'Tenant turnover cleaning',
@@ -106,7 +106,7 @@ export const serviceData = {
   'construction-cleaning': {
     title: 'Professional Construction Cleaning Solutions',
     subtitle: 'Post-Construction Cleanup & Site Preparation Services',
-    heroImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/about1.png',
     description: 'We provide professional post-construction cleanup services to make your spaces move-in ready with thorough debris removal and final cleaning.',
     features: [
       'Debris and dust removal',
@@ -137,7 +137,7 @@ export const serviceData = {
   'disinfection-cleaning': {
     title: 'Advanced Disinfection & Sanitization Solutions',
     subtitle: 'Professional Health & Safety Cleaning Services',
-    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/disinfectioncleaning1.png',
     description: 'We provide professional disinfection services to ensure safe and healthy environments using hospital-grade disinfectants and advanced sanitization techniques.',
     features: [
       'Hospital-grade disinfectants',
@@ -168,7 +168,7 @@ export const serviceData = {
   'carpet-cleaning': {
     title: 'Professional Carpet Cleaning Solutions',
     subtitle: 'Deep Cleaning for Fresh, Pristine Carpets',
-    heroImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    heroImage: '/carpetcleaning.png',
     description: 'We provide expert carpet cleaning services to restore and maintain your carpets using advanced techniques and eco-friendly solutions.',
     features: [
       'Deep steam cleaning',
@@ -528,42 +528,42 @@ const ServicesSection = ({ HeroSection }) => {
       title: 'Commercial Cleaning',
       description: 'Professional cleaning services to keep your business clean, productive, and welcoming.',
       icon: '🏢',
-      backgroundImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/commercialcleaning.png',
       key: 'commercial-cleaning'
     },
     {
       title: 'Specialist Cleaning',
       description: 'Expert services for delicate and specialized cleaning requirements with precision and care.',
       icon: '🧼',
-      backgroundImage: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/specialistcleaning.png',
       key: 'specialist-cleaning'
     },
     {
       title: 'Property Cleaning',
       description: 'Complete cleaning solutions to maintain pristine, fresh, and presentable properties effortlessly.',
       icon: '🏠',
-      backgroundImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/Propertycleaning.png',
       key: 'property-cleaning'
     },
     {
       title: 'Construction Cleaning',
       description: 'Post-construction cleanup removing dust, debris, and ensuring spaces are move-in ready.',
       icon: '🚧',
-      backgroundImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/about1.png',
       key: 'construction-cleaning'
     },
     {
       title: 'Disinfection Cleaning',
       description: 'Thorough disinfection eliminating germs to create safe, healthy, and sanitized spaces.',
       icon: '🦠',
-      backgroundImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/disinfectioncleaning1.png',
       key: 'disinfection-cleaning'
     },
     {
       title: 'Carpet Cleaning',
       description: 'Deep cleaning carpets to remove stains, allergens, and restore their original freshness.',
       icon: '🧹',
-      backgroundImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      backgroundImage: '/carpetcleaning.png',
       key: 'carpet-cleaning'
     }
   ];

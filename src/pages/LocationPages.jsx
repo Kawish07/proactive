@@ -296,12 +296,9 @@ const LocationPage = () => {
                                     </div>
                                 </div>
                                 <div className="text-white">
-                                    <div className="font-bold text-xl">
-                                        <span className="text-green-400">PROACTIVE</span>
-                                    </div>
-                                    <div className="font-bold text-xl -mt-1">
-                                        <span className="text-white">CLEANERS</span>
-                                    </div>
+                                   <Link to="/">
+                                       <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" />
+                                   </Link>
                                 </div>
                             </div>
                         </div>
@@ -312,6 +309,9 @@ const LocationPage = () => {
                             <a href="/location" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Locations</a>
                             <a href="/sector" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Sectors</a>
                             <a href="/contact" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Contact</a>
+                            
+                        </div>
+                        <div>
                             <Link
                                 to="/quote"
                                 className="ml-6 bg-green-400 hover:bg-green-500 text-[#02294D] font-bold py-2 px-6 rounded-full shadow transition flex items-center gap-2"
@@ -454,79 +454,8 @@ const LocationPage = () => {
                 </div>
                 {/* Right Side - Interactive SVG Map */}
                 <div className="flex-1 flex justify-center">
-                    <div className="rounded-2xl w-full max-w-xl overflow-hidden bg-blue-50 p-4 flex items-center justify-center">
-                        <svg viewBox="0 0 600 400" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
-                            {/* Example regions - you can add more paths for each county */}
-                            <g>
-                                {/* Surrey */}
-                                <a href="/location/surrey">
-                                    <path d="M220,320 L260,320 L260,360 L220,360 Z" fill={locationId === 'surrey' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="240" cy="340" r="10" fill="#22c55e" />
-                                </a>
-                                {/* West London */}
-                                <a href="/location/west-london">
-                                    <path d="M180,280 L220,280 L220,320 L180,320 Z" fill={locationId === 'west-london' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="200" cy="300" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Oxfordshire */}
-                                <a href="/location/oxfordshire">
-                                    <path d="M260,240 L300,240 L300,280 L260,280 Z" fill={locationId === 'oxfordshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="280" cy="260" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Berkshire */}
-                                <a href="/location/berkshire">
-                                    <path d="M220,280 L260,280 L260,320 L220,320 Z" fill={locationId === 'berkshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="240" cy="300" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Hampshire */}
-                                <a href="/location/hampshire">
-                                    <path d="M220,360 L260,360 L260,400 L220,400 Z" fill={locationId === 'hampshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="240" cy="380" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Buckinghamshire */}
-                                <a href="/location/buckinghamshire">
-                                    <path d="M300,240 L340,240 L340,280 L300,280 Z" fill={locationId === 'buckinghamshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="320" cy="260" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Kent */}
-                                <a href="/location/kent">
-                                    <path d="M340,280 L380,280 L380,320 L340,320 Z" fill={locationId === 'kent' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="360" cy="300" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Essex */}
-                                <a href="/location/essex">
-                                    <path d="M380,240 L420,240 L420,280 L380,280 Z" fill={locationId === 'essex' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="400" cy="260" r="10" fill="#22c55e" />
-                                </a>
-                                {/* London */}
-                                <a href="/location/london">
-                                    <path d="M240,160 L280,160 L280,200 L240,200 Z" fill={locationId === 'london' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="260" cy="180" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Sussex */}
-                                <a href="/location/sussex">
-                                    <path d="M180,360 L220,360 L220,400 L180,400 Z" fill={locationId === 'sussex' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="200" cy="380" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Hertfordshire */}
-                                <a href="/location/hertfordshire">
-                                    <path d="M260,160 L300,160 L300,200 L260,200 Z" fill={locationId === 'hertfordshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="280" cy="180" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Middlesex */}
-                                <a href="/location/middlesex">
-                                    <path d="M300,200 L340,200 L340,240 L300,240 Z" fill={locationId === 'middlesex' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="320" cy="220" r="10" fill="#22c55e" />
-                                </a>
-                                {/* Bedfordshire */}
-                                <a href="/location/bedfordshire">
-                                    <path d="M220,200 L260,200 L260,240 L220,240 Z" fill={locationId === 'bedfordshire' ? '#22c55e' : '#38bdf8'} stroke="#02294D" strokeWidth="2" />
-                                    <circle cx="240" cy="220" r="10" fill="#22c55e" />
-                                </a>
-                            </g>
-                            {/* Add more counties/regions as needed */}
-                        </svg>
-                    </div>
+                    
+                    <img src="/map.png" alt="" />
                 </div>
             </div>
             <LocationSlider />
