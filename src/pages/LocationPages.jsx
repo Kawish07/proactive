@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate,Link } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import GallerySection from '../components/GallerySection';
 import GetQuoteForm from '../components/GetQuoteForm';
 import LocationSlider from '../components/LocationSlider';
@@ -290,15 +290,17 @@ const LocationPage = () => {
                     <nav className="px-8 py-8 flex items-center justify-between" style={{ backgroundColor: '#02294D' }}>
                         <div className="flex items-center">
                             <div className="flex items-center space-x-2">
-                                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                                    <div className="w-5 h-5 bg-blue-600 rounded-full relative">
-                                        <div className="absolute top-1 left-1 w-2 h-2 bg-green-400 rounded-full"></div>
-                                    </div>
-                                </div>
-                                <div className="text-white">
-                                   <Link to="/">
-                                       <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" loading="lazy" />
-                                   </Link>
+        
+                                <div className="flex items-center">
+                                    <Link to="/">
+                                        <img
+                                            src="/logo.png"
+                                            alt="Proactive Cleaners Logo"
+                                            className=" w-[260px] object-cover mr-10"
+                                            style={{ height: '90px' }}
+                                            loading="lazy"
+                                        />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +311,7 @@ const LocationPage = () => {
                             <a href="/location" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Locations</a>
                             <a href="/sector" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Sectors</a>
                             <a href="/contact" className="text-white hover:text-green-300 transition-colors font-medium cursor-pointer">Contact</a>
-                            
+
                         </div>
                         <div>
                             <Link
@@ -454,7 +456,7 @@ const LocationPage = () => {
                 </div>
                 {/* Right Side - Interactive SVG Map */}
                 <div className="flex-1 flex justify-center">
-                    
+
                     <img src="/map.png" alt="" loading="lazy" />
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate,Link } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { serviceData } from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
 import GetQuoteForm from '../components/GetQuoteForm';
@@ -32,15 +32,17 @@ const ServicePage = () => {
             {/* Logo - Left Side */}
             <div className="flex items-center">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <div className="w-5 h-5 bg-blue-600 rounded-full relative">
-                    <div className="absolute top-1 left-1 w-2 h-2 bg-green-400 rounded-full"></div>
-                  </div>
-                </div>
-                <div className="text-white">
+
+                <div className="flex items-center">
                   <Link to="/">
-                  <img src="https://proactivecleaners.co.uk/wp-content/uploads/2024/07/Group-1000005238.svg" alt="" loading="lazy" />
-                </Link>
+                    <img
+                      src="/logo.png"
+                      alt="Proactive Cleaners Logo"
+                      className=" w-[260px] object-cover mr-10"
+                      style={{ height: '90px' }}
+                      loading="lazy"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,7 +84,7 @@ const ServicePage = () => {
       </section>
 
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <button 
+        <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
         >
