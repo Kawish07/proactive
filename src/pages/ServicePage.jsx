@@ -37,7 +37,7 @@ const ServicePage = () => {
                   <Link to="/">
                     <img
                       src="/logo.png"
-                      alt="Proactive Cleaners Logo"
+                      alt="pro-Radiant Cleaner Logo"
                       className=" w-[260px] object-cover mr-10"
                       style={{ height: '90px' }}
                       loading="lazy"
@@ -97,7 +97,7 @@ const ServicePage = () => {
         <div className="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row items-center p-8 gap-8">
           <div className="flex-1">
             <span className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-semibold mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Why Choose Proactive Cleaners For {service.title}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Why Choose Pro-Radiant Cleaners For {service.title}</h2>
             <h3 className="text-xl font-semibold text-green-700 mb-4">{service.subtitle}</h3>
             <p className="text-lg text-gray-700 mb-4">{service.description}</p>
             <div className="bg-gray-50 rounded-2xl p-6 mb-4">

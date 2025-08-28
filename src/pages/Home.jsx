@@ -126,7 +126,7 @@ const Home = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-3">Customer Satisfaction</h3>
                                 <p className="text-white leading-relaxed">
-                                    At Proactive Cleaners, your satisfaction is our priority, with consistent quality and reliable service every time
+                                    At pro-Radiant Cleaner, your satisfaction is our priority, with consistent quality and reliable service every time
                                 </p>
                             </div>
 
@@ -195,8 +195,7 @@ const Home = () => {
                             {/* Large image - left side */}
                             <div className="relative rounded-2xl overflow-hidden">
                                 <img
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                                    alt="Proactive Cleaners professional worker"
+                                    src="/proradiant.png"
                                     className="w-full h-96 object-cover"
                                 />
                             </div>
@@ -205,10 +204,10 @@ const Home = () => {
                             <div className="space-y-4">
                                 {/* Stats card */}
                                 <div className="bg-blue-50 rounded-2xl p-6 text-center">
-                                    <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                                    <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
                                     <div className="text-gray-600 font-medium mb-3">Years of Experience</div>
                                     <p className="text-sm text-gray-500 mb-4">
-                                        With over 15 years of experience, we deliver trusted and expert cleaning solutions
+                                        With over 5+ years of experience, we deliver trusted and expert cleaning solutions
                                     </p>
                                     <button className="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 mx-auto transition-colors">
                                         Get a Quote
@@ -236,7 +235,7 @@ const Home = () => {
                             <p className="text-gray-600 leading-relaxed">
                                 Our experience and expertise mean that quantity surveyors, site
                                 managers, office managers, clinic and education decision-makers
-                                regularly seek out Proactive Cleaners as they can trust us to deliver.
+                                regularly seek out Pro-Radiant Cleaners as they can trust us to deliver.
                             </p>
 
                             {/* Feature list */}

@@ -47,7 +47,7 @@ const LocationSection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg text-slate-600 leading-relaxed">
-              Proactive Cleaners now provide commercial cleaning services across the 
+              Pro-Radiant Cleaners now provide commercial cleaning services across the 
               entire UK. While we remain specialists in the South East — including 
               Oxfordshire, Buckinghamshire, Surrey and London — our team can now 
               travel nationwide for specialist projects or long-term contracts.

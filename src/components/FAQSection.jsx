@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { ChevronUp, ChevronDown, HelpCircle, Settings } from 'lucide-react';
 
 const FAQSection = () => {
-  const [openFAQ, setOpenFAQ] = useState(0); // First FAQ is open by default
+  const [openFAQ, setOpenFAQ] = useState(0); 
 
   const faqs = [
     {
       id: 0,
-      question: "Why should I use Proactive Cleaners?",
+      question: "Why should I use Pro-Radiant Cleaners?",
       answer: "We bring deep expertise in commercial and construction cleaning, with a strong focus on delivering reliable and consistent results. Our approach is centered on understanding the unique needs of each client and tailoring our services accordingly.\n\nWhat makes us different is the personal touch you receive — a commitment to quality, attention to detail, and complete professionalism from start to finish. Working with us means peace of mind that your environment will always be maintained to the highest standards."
     },
     {

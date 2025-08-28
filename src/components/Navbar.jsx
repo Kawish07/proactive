@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => (
   <nav className="bg-white text-gray-800 px-8 py-4 flex items-center justify-between shadow-sm">
     <div className="flex items-center">
-      <span className="text-l font-bold text-green-900">PROACTIVE GROUP</span>
+      <span className="text-l font-bold text-green-900">PRORADIANT CLEANERS</span>
     </div>
     
     <div className="hidden md:flex">

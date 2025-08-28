@@ -295,7 +295,7 @@ const LocationPage = () => {
                                     <Link to="/">
                                         <img
                                             src="/logo.png"
-                                            alt="Proactive Cleaners Logo"
+                                            alt="pro-Radiant Cleaner Logo"
                                             className=" w-[260px] object-cover mr-10"
                                             style={{ height: '90px' }}
                                             loading="lazy"
@@ -353,7 +353,7 @@ const LocationPage = () => {
                 <div className="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row items-center p-8 gap-8">
                     <div className="flex-1">
                         <h2 className="text-4xl font-bold text-gray-900 mb-6">Commercial Cleaners in {location.name}</h2>
-                        <p className="text-lg text-gray-700 mb-6">Need cleaning services for business venues or offices in Greater/{location.name}? Proactive Cleaners can help, with their wide variety of services for commercial cleaning.</p>
+                        <p className="text-lg text-gray-700 mb-6">Need cleaning services for business venues or offices in Greater/{location.name}? pro-Radiant Cleaner can help, with their wide variety of services for commercial cleaning.</p>
                         <p className="text-lg text-gray-700 mb-6">Our services include hospitality/retail cleaning, office cleaning and school cleaning in {location.name}. Check out our services today.</p>
                         <div className="flex gap-4 mt-6">
                             <a href="/quote" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow transition flex items-center gap-2">Get a Quote <span aria-hidden="true">↗</span></a>
@@ -369,8 +369,8 @@ const LocationPage = () => {
                 <div className="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row-reverse items-center p-8 gap-8">
                     <div className="flex-1">
                         <h2 className="text-4xl font-bold text-gray-900 mb-6">Property Cleaning in {location.name}</h2>
-                        <p className="text-lg text-gray-700 mb-6">There are plenty of properties and buildings in {location.name} that require professional cleaning on a regular basis. Proactive Cleaners offers property cleaning in {location.name}.</p>
-                        <p className="text-lg text-gray-700 mb-6">Whether your property in {location.name} needs regular or intensive cleaning, Proactive Cleaning has the right option for you. Our property cleaning services include carpet cleaners, end of tenancy, deep cleaning and garden cleaning.</p>
+                        <p className="text-lg text-gray-700 mb-6">There are plenty of properties and buildings in {location.name} that require professional cleaning on a regular basis. pro-Radiant Cleaner offers property cleaning in {location.name}.</p>
+                        <p className="text-lg text-gray-700 mb-6">Whether your property in {location.name} needs regular or intensive cleaning, pro-Radiant Cleaning has the right option for you. Our property cleaning services include carpet cleaners, end of tenancy, deep cleaning and garden cleaning.</p>
                         <div className="flex gap-4 mt-6">
                             <a href="/quote" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow transition flex items-center gap-2">Get a Quote <span aria-hidden="true">↗</span></a>
                             <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow transition flex items-center gap-2">Call Us <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 16.92V19a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h2.09a2 2 0 012 1.72c.13 1.13.37 2.25.72 3.32a2 2 0 01-.45 2.11l-1.27 1.27a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c1.07.35 2.19.59 3.32.72A2 2 0 0122 16.92z" /></svg></a>
@@ -385,7 +385,7 @@ const LocationPage = () => {
                 <div className="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row items-center p-8 gap-8">
                     <div className="flex-1">
                         <h2 className="text-4xl font-bold text-gray-900 mb-6">Disinfection Cleaning in {location.name}</h2>
-                        <p className="text-lg text-gray-700 mb-6">COVID-19 has made disinfection cleaning a necessary service for cities across the globe. Proactive Cleaners have provided numerous disinfection services across {location.name}.</p>
+                        <p className="text-lg text-gray-700 mb-6">COVID-19 has made disinfection cleaning a necessary service for cities across the globe. pro-Radiant Cleaner have provided numerous disinfection services across {location.name}.</p>
                         <p className="text-lg text-gray-700 mb-6">Our disinfection cleaning option includes biohazard cleaning and decontamination. Take a look at our disinfection cleaning option today.</p>
                         <div className="flex gap-4 mt-6">
                             <a href="/quote" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow transition flex items-center gap-2">Get a Quote <span aria-hidden="true">↗</span></a>
@@ -393,7 +393,7 @@ const LocationPage = () => {
                         </div>
                     </div>
                     <div className="flex-1 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1588776814546-ec7e4b2b1d8e?auto=format&fit=crop&w=800&q=80" alt="Disinfection Cleaning" className="rounded-2xl w-full max-w-md object-cover" loading="lazy" />
+                        <img src="/disinfectioncleaning1.png" className="rounded-2xl w-full max-w-md object-cover" loading="lazy" />
                     </div>
                 </div>
             </div>

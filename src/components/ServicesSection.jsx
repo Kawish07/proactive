@@ -462,7 +462,7 @@ const ServicePage = ({ serviceKey, onBack }) => {
         <div className="bg-white rounded-3xl shadow-lg flex flex-col md:flex-row items-center p-8 gap-8">
           <div className="flex-1">
             <span className="inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-semibold mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Proactive Cleaners For {service.title}</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Pro-Radiant Cleaners For {service.title}</h2>
             <p className="text-lg text-gray-700 mb-4">There are a wide variety of options to choose from when considering our company for {service.title.toLowerCase()}. These options include:</p>
             <div className="bg-gray-50 rounded-2xl p-6 mb-4 flex flex-col md:flex-row items-center gap-6">
               <div className="flex-1">

@@ -19,7 +19,7 @@ const Services = () => {
                   <Link to="/">
                     <img
                       src="/logo.png"
-                      alt="Proactive Cleaners Logo"
+                      alt="pro-Radiant Cleaner Logo"
                       className=" w-[260px] object-cover mr-10"
                       style={{ height: '90px' }}
                       loading="lazy"

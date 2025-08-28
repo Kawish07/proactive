@@ -46,7 +46,7 @@ const ProactiveCleanersAbout = () => {
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               The Story Of<br />
-              Proactive Cleaners
+              Pro-Radiant Cleaners
             </h1>
             
             <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -64,7 +64,7 @@ const ProactiveCleanersAbout = () => {
               
               <p>
                 With over 15 years of experience and a passion for service excellence, 
-                Proactive Cleaners was born.
+                pro-Radiant Cleaner was born.
               </p>
             </div>
 

@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
       avatar: "A",
       avatarBg: "bg-amber-800",
       rating: 5,
-      text: "Absolutely brilliant service from proactive cleaners! They cleaned my flat weekly for the last 3 months and I'm always impressed by how spotless it looks. They're super reliable, friendly, and even remembered the small...",
+      text: "Absolutely brilliant service from pro-Radiant cleaners! They cleaned my flat weekly for the last 3 months and I'm always impressed by how spotless it looks. They're super reliable, friendly, and even remembered the small...",
       likes: 1
     },
     {
@@ -30,59 +30,9 @@ const TestimonialsSection = () => {
       avatar: "U",
       avatarBg: "bg-blue-600",
       rating: 5,
-      text: "I hired Proactive Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
+      text: "I hired Pro-Radiant Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
       likes: 1
     },
-    {
-      id: 4,
-      name: "usman khan",
-      timeAgo: "42 minutes ago",
-      avatar: "U",
-      avatarBg: "bg-blue-600",
-      rating: 5,
-      text: "I hired Proactive Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
-      likes: 1
-    },
-    {
-      id: 5,
-      name: "shafay",
-      timeAgo: "1 day ago",
-      avatar: "U",
-      avatarBg: "bg-blue-600",
-      rating: 5,
-      text: "I hired Proactive Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
-      likes: 1
-    },
-    {
-      id: 6,
-      name: "zeeshan",
-      timeAgo: "5 day ago",
-      avatar: "U",
-      avatarBg: "bg-blue-600",
-      rating: 5,
-      text: "I hired Proactive Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
-      likes: 1
-    },
-    {
-      id: 7,
-      name: "ahassam",
-      timeAgo: "10 day ago",
-      avatar: "U",
-      avatarBg: "bg-blue-600",
-      rating: 5,
-      text: "I hired commercial Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
-      likes: 1
-    },
-    {
-      id: 8,
-      name: "kawish",
-      timeAgo: "4 day ago",
-      avatar: "U",
-      avatarBg: "bg-blue-600",
-      rating: 5,
-      text: "I hired Proactive Cleaners for Commercial kitchen cleaning and be happier with the results. The team was punctual professional, and friendly.They paid great attention to detail and left everything spotless....",
-      likes: 1
-    }
   ];
 
   const [current, setCurrent] = React.useState(0);

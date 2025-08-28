@@ -25,7 +25,7 @@ const QuotePage = () => {
       <section className="max-w-6xl mx-auto my-12 p-0 flex flex-col md:flex-row items-center">
         <div className="flex-1 p-8">
           <h2 className="text-4xl font-bold mb-6">Bespoke Cleaning Service For Your Needs</h2>
-          <p className="text-lg text-gray-700 mb-4">At Proactive Cleaners, we offer a wide variety of commercial, construction and industrial cleaning services. This includes rapid-response disinfection and decontamination cleaning as well as emergency call-outs. From a one-off builder’s clean to daily disinfection cleaning at medical clinics, our team of specialists are here to help.</p>
+          <p className="text-lg text-gray-700 mb-4">At pro-Radiant Cleaner, we offer a wide variety of commercial, construction and industrial cleaning services. This includes rapid-response disinfection and decontamination cleaning as well as emergency call-outs. From a one-off builder’s clean to daily disinfection cleaning at medical clinics, our team of specialists are here to help.</p>
           <p className="text-lg text-gray-700">As all of our services are bespoke and designed around your needs, we do not have a price list. However, after understanding your requirements, we will create a competitive quote that is exclusive to your business. By filling in this quick quote form, we’ll have a greater understanding of precisely what you are looking for to be able to provide a quote. In some circumstances, we may need to conduct a free site visit before giving you a final price. If you’d like more information about our services before receiving a quote, then please request a free callback.</p>
         </div>
         <div className="flex-1 flex justify-center">

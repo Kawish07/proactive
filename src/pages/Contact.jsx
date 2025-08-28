@@ -8,7 +8,7 @@ const Contact = () => (
   <>
     <HeroSection
       backgroundImage="/contact.png"
-      title="Contact Proactive Cleaners"
+      title="Contact pro-Radiant Cleaner"
       subtitle="We'd Love To Hear From You"
       description="Reach out to our team for any questions, quotes, or support. We're here to help you with all your cleaning needs."
       showQuoteButton={false}
